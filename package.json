@@ -1,4 +1,25 @@
 {
+  "name": "tooty",
+  "version": "0.1.0",
+  "description": "Simple agnostic message router for node",
+  "license": "MIT",
+  "author": "Filipe Dobreira <dobreira@gmail.com>",
+  "main": "lib/tooty.js",
+  "keywords": [
+    "route",
+    "router",
+    "scum",
+    "messaging",
+    "worker",
+    "rpc"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/filp/tooty"
+  },
+  "bugs": {
+    "url": "https://github.com/filp/tooty/issues"
+  },
   "scripts": {
     "test": "NODE_ENV=test node_modules/.bin/mocha test/**/*"
   },
