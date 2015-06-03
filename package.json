@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "babel": "^5.2.15"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test node_modules/.bin/mocha test/**/*"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.4"
+  }
+}
