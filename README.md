@@ -36,6 +36,12 @@ var handler = router.dispatch("users:fire", additionalData);
 $ npm install --save tooty
 ```
 
+#### ES6
+
+Tooty is written using ES6 features. In development, it uses the [Babel](https://github.com/babel/babel) library.
+Before being published to npm, the library is compiled automatically to ES5 (through the `prepublish` command defined in
+the `package.json` file)
+
 ### Authors
 
 `tooty` was developed by [Filipe Dobreira](https://github.com/filp). Contributions to the code are very welcome!
