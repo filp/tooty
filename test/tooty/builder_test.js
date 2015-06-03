@@ -6,6 +6,7 @@ describe("Builder", () => {
     // Note: this test uses simple values in place of handlers
     //       to simplify the comparisons (we're checking solely)
     //       for route definitions).
+
     var builder = tooty.Builder.build((r) => {
       r.route("route1", 1);
       r.route("route2", 2);
