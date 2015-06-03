@@ -16,6 +16,8 @@ describe("tooty.Builder", () => {
         ns.route("route4", 4);
       });
 
+      r.route(["ns", "route5"], 5);
+
       // Duplicate of the second route:
       r.route("route2", 20);
     });
@@ -32,6 +34,10 @@ describe("tooty.Builder", () => {
 
     it("supports namespaced routes", () => {
       assert.equal(routes["ns:route4"].handler, 4);
+    });
+
+    it("supports defining namespaced routes with an array", () => {
+      assert.equal(routes["ns:route5"].handler, 5);
     });
 
     it("accepts duplicate routes and uses the most recent one", () => {
