@@ -21,10 +21,13 @@
     "url": "https://github.com/filp/tooty/issues"
   },
   "scripts": {
-    "test": "NODE_ENV=test node_modules/.bin/mocha test/**/*"
+    "test": "NODE_ENV=test node_modules/.bin/mocha test/tooty/*.js"
   },
   "devDependencies": {
     "mocha": "^2.2.4",
     "babel": "^5.2.15"
+  },
+  "dependencies": {
+    "deepmerge": "^0.2.10"
   }
 }
