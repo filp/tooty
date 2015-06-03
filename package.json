@@ -1,10 +1,10 @@
 {
   "name": "tooty",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple agnostic message router for node",
   "license": "MIT",
   "author": "Filipe Dobreira <dobreira@gmail.com>",
-  "main": "lib/tooty.js",
+  "main": "src-js/tooty.js",
   "keywords": [
     "route",
     "router",
@@ -21,7 +21,9 @@
     "url": "https://github.com/filp/tooty/issues"
   },
   "scripts": {
-    "test": "NODE_ENV=test node_modules/.bin/mocha test/tooty/*.js"
+    "compile": "babel lib/ -d src-js/",
+    "test": "NODE_ENV=test node_modules/.bin/mocha test/tooty/*.js",
+    "prepublish": "npm run compile"
   },
   "devDependencies": {
     "mocha": "^2.2.4",
