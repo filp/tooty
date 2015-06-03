@@ -5,16 +5,16 @@ Simple agnostic message router for node.
 ![toot toot](http://i.imgur.com/GDymv5n.jpg)
 
 ```js
-  import tooty from "tooty";
+import tooty from "tooty";
 
-  router = tooty.build((r) => {
-    // Define routes:
-    r.route("users:fire", myUsersHandler.fire);
-  });
+router = tooty.build((r) => {
+  // Define routes:
+  r.route("users:fire", myUsersHandler.fire);
+});
 
-  // You get your handler back, and can do whatever you wish
-  // with it from here on:
-  var handler = router.dispatch("users:fire", additionalData);
+// You get your handler back, and can do whatever you wish
+// with it from here on:
+var handler = router.dispatch("users:fire", additionalData);
 ```
 
 ### You can use it as the basis for:
