@@ -3,10 +3,10 @@ import tooty from "../../lib/tooty";
 
 describe("Builder", () => {
   describe(".build", () => {
+
     // Note: this test uses simple values in place of handlers
     //       to simplify the comparisons (we're checking solely)
     //       for route definitions).
-
     var builder = tooty.Builder.build((r) => {
       r.route("route1", 1);
       r.route("route2", 2);
@@ -36,6 +36,21 @@ describe("Builder", () => {
 
     it("accepts duplicate routes and uses the most recent one", () => {
       assert.equal(routes.route2.handler, 20);
+    });
+  });
+
+  describe(".build with custom separator", () => {
+
+    var builder = tooty.Builder.build((r) => {
+      r.namespace("ns", (ns) => {
+        ns.route("route1", 1);
+      });
+    }, { separator: "/" });
+
+    var routes = builder.resolve();
+
+    it("uses the custom separator when building namespaced routes", () => {
+      assert.equal(routes["ns/route1"].handler, 1);
     });
   });
 });
