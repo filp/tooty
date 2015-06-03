@@ -1,7 +1,7 @@
 import assert from "assert";
 import tooty from "../../lib/tooty";
 
-describe("Builder", () => {
+describe("tooty.Builder", () => {
   describe(".build", () => {
 
     // Note: this test uses simple values in place of handlers
