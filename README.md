@@ -17,7 +17,7 @@ router = tooty.build((r) => {
 var handler = router.dispatch("users:fire", additionalData);
 ```
 
-### You can use it as the basis for:
+### You can use it for:
 
 - Routing socket.io events to handlers
 - Routing chat bot actions to action handlers
