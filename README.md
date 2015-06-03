@@ -1,4 +1,4 @@
-# tooty
+# tooty [![Circle CI](https://circleci.com/gh/filp/tooty.svg?style=svg)](https://circleci.com/gh/filp/tooty)
 
 Simple agnostic message router for node.
 
