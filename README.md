@@ -1,6 +1,6 @@
 # tooty
 
-Simple, reliable agnostic message router for node.
+Simple agnostic message router for node.
 
 ![toot toot](http://i.imgur.com/GDymv5n.jpg)
 
